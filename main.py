@@ -74,5 +74,5 @@ async def update_user(user: UserUpdateRequest, user_id: UUID):
             return i
     raise HTTPException(
         status_code=404,
-        detail=f"user id : {user.id} not found"
+        detail=f"user id : {user_id} not found"
     )
